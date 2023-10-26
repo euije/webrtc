@@ -18,7 +18,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
   <script type="module">
     'use strict';
-    const sock = new SockJS("http://localhost:8080/ws");
+    const sock = new SockJS("/ws");
     const socket = Stomp.over(sock);
     socket.debug = (str) => {
       console.log(str);
